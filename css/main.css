@@ -1,0 +1,54 @@
+body {
+  background: #000000;
+  border: 0;
+  padding: 0;
+  color: #ffffff;
+}
+body.loading {
+  overflow: hidden;
+}
+body.loading .loader {
+  display: block;
+  background-color: #000000;
+}
+
+#inputImage {
+  height: 100%;
+  width: 100%;
+}
+
+.input-file #inputFile {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+.input-file label {
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 200px;
+  left: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: helvetica;
+  color: #000000;
+  background-color: #e7e55d;
+  border-radius: 15px;
+}
+
+.loader {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8) url("../imgs/loader.gif") 50% 50% no-repeat;
+}
+
+/*# sourceMappingURL=main.css.map */

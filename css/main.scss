@@ -1,0 +1,68 @@
+$pure-black: #000000;
+$pure-white: #ffffff;
+$gold: rgb(231, 229, 93);
+
+body{
+
+  background: $pure-black;
+  border: 0;
+  padding: 0;
+  color: $pure-white;
+
+  &.loading{
+    overflow: hidden;
+  }
+
+  &.loading .loader{
+    display: block;
+    background-color: $pure-black;
+  }
+
+}
+
+#inputImage{
+  height: 100%;
+  width: 100%;
+}
+
+.input-file{
+
+  #inputFile{
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+  }
+
+  label{
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 200px;
+    left: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: helvetica;
+    color: $pure-black;
+    background-color: $gold;
+    border-radius: 15px;
+
+  }
+}
+
+.loader {
+  display:    none;
+  position:   fixed;
+  z-index:    1000;
+  top:        0;
+  left:       0;
+  height:     100%;
+  width:      100%;
+  background: rgba( 255, 255, 255, .8)
+              url('../imgs/loader.gif')
+              50% 50%
+              no-repeat;
+}

@@ -1,10 +1,25 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="./css/main.css">
   </head>
+
   <body>
+
+  <div class="loader"></div>
+
+  <div class="input-file">
+    <input type="file" id="inputFile" name="inputFile" >
+    <label for="inputFile">Select File</label>
+  </div>
+
+  <img id="inputImage">
+
+
+  <script src="./js/app.js" type="text/javascript"></script>
+  <script async src="./js/opencv.js" onload="openCVReady()" type="text/javascript"></script>
 
   </body>
 </html>
